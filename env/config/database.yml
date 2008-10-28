@@ -1,0 +1,20 @@
+development:
+  adapter: mysql
+  database: video_dev
+  username: root
+  password: 
+  host: 127.0.0.1
+
+test:
+  adapter: mysql
+  database: video_test
+  username: root
+  password: 
+  host: 127.0.0.1
+
+production:
+  adapter: mysql
+  database: video_prod
+  username: root 
+  password: 
+  host: 127.0.0.1

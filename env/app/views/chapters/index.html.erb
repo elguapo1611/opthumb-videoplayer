@@ -1,0 +1,25 @@
+<h1>Listing chapters</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Src</th>
+    <th>Time</th>
+  </tr>
+
+<% for chapters in @chapters %>
+
+  <tr>
+    <td><%=h chapters.title %></td>
+    <td><%=h chapters.src %></td>
+    <td><%=h chapters.time %></td>
+    <td><%= link_to 'Show', chapters %></td>
+    <td><%= link_to 'Edit', edit_chapter_path(chapters) %></td>
+    <td><%= link_to 'Destroy', chapters, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New chapters', new_chapter_path %>

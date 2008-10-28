@@ -1,0 +1,24 @@
+<h1>Editing chapters</h1>
+
+<% form_for(@chapters) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :src %><br />
+    <%= f.text_field :src %>
+  </p>
+  <p>
+    <%= f.label :time %><br />
+    <%= f.text_field :time %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @chapters %> |
+<%= link_to 'Back', chapters_path %>

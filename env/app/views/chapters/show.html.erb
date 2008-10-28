@@ -1,0 +1,18 @@
+<p>
+  <b>Title:</b>
+  <%=h @chapters.title %>
+</p>
+
+<p>
+  <b>Src:</b>
+  <%=h @chapters.src %>
+</p>
+
+<p>
+  <b>Time:</b>
+  <%=h @chapters.time %>
+</p>
+
+
+<%= link_to 'Edit', edit_chapters_path(@chapters) %> |
+<%= link_to 'Back', chapters_path %>
